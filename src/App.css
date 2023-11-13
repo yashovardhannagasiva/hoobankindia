@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+  
+    .boxWidth {
+      @apply xl:max-w-[1280px] w-full
+    }
+    .heading2 {
+        @apply font-poppins font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full;
+    }
+    .paragraph {
+        @apply font-poppins font-normal text-dimWhite text-[18px] leading-[30.8px];
+    }
+
+    .flexCenter {
+        @apply flex justify-center items-center;
+    }
+
+    .flexStart {
+        @apply flex justify-center items-start;
+    }
+
+    .paddingX {
+        @apply sm:px-16 px-6;
+    }
+
+    .paddingY {
+        @apply sm:py-16 py-6;
+    }
+
+    .padding {
+        @apply sm:px-16 px-6 sm:py-12 py-4;
+    }
+
+    .marginX {
+        @apply sm:mx-16 mx-6;
+    }
+
+    .marginY {
+        @apply sm:my-16 my-6;
+    }
+    .section{
+        @apply flex md:flex-row flex-col sm:py-16 py-6;
+    }
+    .sectionReverse{
+        @apply flex md:flex-row flex-col-reverse ;
+    }
+    .sectionImgReverse{
+        @apply flex-1 flex justify-center items-center md:mr-10 mr-0 md:mt-0 mt-10 relative;
+    }
+    .sectionImg{
+        @apply flex-1 flex justify-center items-center md:ml-10 ml-0 md:mt-0 mt-10 relative;
+    }
+    .sectionInfo{
+        @apply flex-1 justify-center items-start flex-col;
+    }
+    
+}
+.animate-shake-vertical {
+    animation: moveUpDown 2s ease-in-out infinite;
+  }
+  .animate-shake-vertical1 {
+    animation: moveUpDown 2s ease-in-out 100ms infinite;
+  }
+  .animate-shake-vertical2 {
+    animation: moveUpDown 2s ease-in-out 200ms infinite;
+  }
+@keyframes moveUpDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+  }
+
+  .to-bounce {
+    animation: bounce 0.5s infinite;
+  }
+  .to-bounce1 {
+    animation: bounce 1s 500ms infinite;
+  }
+  .to-bounce2 {
+    animation: bounce 2s 1000ms infinite;
+  }
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+  
+  
